@@ -1,0 +1,233 @@
+.navbar{
+    border-radius: 0;
+    position: relative;
+    z-index: 10;
+}
+.list-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-top:52px;
+    display: flex;
+}
+
+.list-sliderBar{
+    width:190px;
+    height: 100%;
+    background: #f2f2f2;
+    flex-shrink: 0;
+}
+
+.list-sliderBar ul{
+    width: 100%;
+    height: 100%;
+}
+.list-sliderBar ul li{
+    width:100%;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #bbb;
+    font-size:14px;
+}
+
+.list-sliderBar ul .active{
+    background: #222;
+    color: #fff;
+}
+
+.list-content{
+    flex: 1;
+}
+
+/* 添加书籍 */
+
+.booksForm{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booksForm form{
+    width:480px;
+}
+
+.upload{
+    width:200px;
+    height:200px;
+    position: relative;
+}
+
+.upload input[type='file']{
+    width:200px;
+    height:200px;
+    position: absolute;
+    left: 0;
+    top:0;
+    opacity: 0;
+}
+
+.upload>div{
+    width:200px;
+    height:200px;
+    position: absolute;
+    left: 0;
+    top:0;
+    border:1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+/* booksActions */
+.booksActions,.usersAction{
+    padding: 10px;
+}
+.booksActions th,.usersAction th{
+    text-align: center;
+}
+
+.booksActions td,.usersAction td{
+    text-align: center;
+    position: relative;
+    height: 90px;
+    line-height: 90px !important;
+}
+.booksActions td img{
+    width:50px;
+    height: 70px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -25px;
+    margin-top:-35px;
+
+}
+
+.usersAction td img{
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -25px;
+    margin-top:-25px;
+}
+
+#pageList{
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
+
+/* form-search */
+
+.form-search{
+    margin-bottom:20px;
+}
+
+/* mine */
+
+
+.mine{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+.mine .content{
+    width:400px;
+}
+
+.userInfo_update{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border:1px solid #ccc;
+}
+.userInfo_update input{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 10;
+}
+
+.userInfo_update span{
+    position: absolute;
+    font-size: 40px;
+}
+
+.userInfo_update img{
+    width:120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+/* ArticleAction */
+
+.ArticleAction{
+    padding: 10px;
+}
+
+.articleList{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.articleList div{
+    width:25%;
+    padding: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* commentList_item */
+
+.commentList_item{
+    width:100%;
+    height: auto;
+    min-height: 30px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.commentList_item>div:nth-child(1){
+    display: flex;
+    align-items: center;
+
+}
+
+.commentList_item>div:nth-child(1) .userPic,.commentList_item>div:nth-child(1) .userPic img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+   
+}
+
+.commentList_item>div:nth-child(1) .userPic{
+    margin: 0 10px;
+}
+.commentList_item>div:nth-child(2),.commentList_item>div:nth-child(3){
+    line-height: 50px;
+}
