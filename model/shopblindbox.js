@@ -6,6 +6,15 @@ module.exports = (sequelize, Sequelize, DataTypes) => {
       primaryKey: true,            // 主键
       autoIncrement: true,         // 自动递增
     },
+    uid:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    // 1是上架 2是出售 3下架
+    status:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     // 藏品等级
     level: {
         type: DataTypes.INTEGER,

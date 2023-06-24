@@ -27,14 +27,16 @@ module.exports = (sequelize, Sequelize, DataTypes) => {
             defaultValue: [] // 设置默认值为空数组
         },
         // 元气
-        reikis: {
-            type: DataTypes.ARRAY(DataTypes.JSON), // 定义数组对象字段
-            defaultValue: [] // 设置默认值为空数组
+        reikisCount: {
+          type: DataTypes.INTEGER,
+          allowNull:false,
+          defaultValue:0,
         },
         //金丹
-        jindans: {
-            type: DataTypes.ARRAY(DataTypes.JSON), // 定义数组对象字段
-            defaultValue: [] // 设置默认值为空数组
+        jindansCount: {
+          type: DataTypes.INTEGER,
+          allowNull:false,
+          defaultValue:0
         },
         
       },{

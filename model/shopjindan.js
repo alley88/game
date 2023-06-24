@@ -7,8 +7,14 @@ module.exports = (sequelize, Sequelize, DataTypes) => {
           autoIncrement: true,         // 自动递增
         },
       uid:{
-
+        type: DataTypes.INTEGER,
+        allowNull: false,
       },
+       // 1是上架 2是出售 3下架
+    status:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
       // 数量
      count:{
       type: DataTypes.INTEGER,
@@ -19,16 +25,12 @@ module.exports = (sequelize, Sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       allowNull:false
      },
-     // 总价
-     totalPrice: {
-      type: DataTypes.INTEGER,
-      allowNull:false
-     },
+     
       },{
-        tableName: 'users',
+        tableName: 'shopsjindan',
         timestamps:false
       });
       
-    return Blindbox;
+    return ShopsJindan;
   };
   

@@ -7,7 +7,13 @@ module.exports = (sequelize, Sequelize, DataTypes) => {
         autoIncrement: true,         // 自动递增
       },
     uid:{
-
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+     // 1是上架 2是出售 3下架
+     status:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
      // 藏品等级
      level: {
@@ -49,5 +55,5 @@ module.exports = (sequelize, Sequelize, DataTypes) => {
         timestamps:false
       });
       
-    return Blindbox;
+    return Shopsfigure;
   };
